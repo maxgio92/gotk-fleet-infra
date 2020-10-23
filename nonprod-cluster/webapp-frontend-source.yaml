@@ -2,7 +2,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
-  name: webapp
+  name: webapp-frontend
   namespace: gotk-system
 spec:
   interval: 30s

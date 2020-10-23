@@ -10,7 +10,7 @@ spec:
   prune: true
   sourceRef:
     kind: GitRepository
-    name: webapp
+    name: webapp-cache
   timeout: 2m0s
   validation: client
 
