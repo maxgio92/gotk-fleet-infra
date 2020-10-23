@@ -7,9 +7,6 @@ metadata:
 spec:
   healthChecks:
   - kind: Deployment
-    name: frontend
-    namespace: production
-  - kind: Deployment
     name: backend
     namespace: production
   interval: 10m0s
