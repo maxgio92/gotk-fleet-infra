@@ -2,7 +2,7 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
 kind: Kustomization
 metadata:
-  name: webapp
+  name: webapp-backend-staging
   namespace: gotk-system
 spec:
   healthChecks:
