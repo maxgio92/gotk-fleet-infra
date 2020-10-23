@@ -7,6 +7,6 @@ metadata:
 spec:
   interval: 30s
   ref:
-    branch: master
-  url: https://github.com/maxgio92/podinfo
+    semver: '>=4.0.0 <4.0.2'
+  url: https://github.com/maxgio92/podinfo-frontend
 

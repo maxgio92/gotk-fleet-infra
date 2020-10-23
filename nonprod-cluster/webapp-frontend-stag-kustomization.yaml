@@ -1,15 +1,20 @@
+---
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
 kind: Kustomization
 metadata:
-  creationTimestamp: null
-  name: gotk-system
+  name: webapp
   namespace: gotk-system
 spec:
+  healthChecks:
+  - kind: Deployment
+    name: frontend
+    namespace: staging
   interval: 10m0s
-  path: ./staging-cluster
+  path: ./deploy/overlays/staging
   prune: true
   sourceRef:
     kind: GitRepository
-    name: gotk-system
+    name: webapp
+  timeout: 2m0s
   validation: client
-status: {}
+
